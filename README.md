@@ -1,7 +1,6 @@
 # Theme Clock
 
-<img width="1429" alt="Screenshot" src="">
-![screen recording](https://media.giphy.com/media/w25FKWHe4P37k5ANjW/giphy.gif)
+![screen recording](https://media.giphy.com/media/BFyLpViXl7c20T3fXp/giphy.gif)
 
 #### project notes
 
