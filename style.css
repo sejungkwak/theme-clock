@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #1e212d;
+    transition: 500ms ease-out;
+}
+body.dark-mode {
+    background-color: #1e212d;
+    color: #fff;
+    transition: 500ms ease-out;
+}
+
+/* analog-clock */
+
+.analog-clock {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.analog-clock > * {
+    position: absolute;
+    transform-origin: left;
+}
+
+.centre {
+    width: 12px;
+    height: 12px;
+    background-color: #e63946;
+    border: 4px solid #1e212d;
+    border-radius: 50%;
+    top: 194px;
+}
+
+.hour {
+    width: 90px;
+    height: 0;
+    border-top: 8px solid #1e212d;
+    border-radius: 10px;
+    left: 200px;
+    top: 196px;
+    transform: rotate(var(--hour));
+}
+
+.minute {
+    width: 120px;
+    height: 0;
+    border-top: 6px solid #1e212d;
+    border-radius: 10px;
+    left: 200px;
+    top: 197px;
+    transform: rotate(var(--minute));
+}
+
+.second {
+    width: 150px;
+    height: 0;
+    border-top: 4px solid #e63946;
+    border-radius: 10px;
+    left: 200px;
+    top: 198px;
+    transform: rotate(var(--second));
+}
+
+.centre.dark-mode {
+    border-color: #fff;
+}
+
+.hour.dark-mode {
+    border-top-color: #fff;
+}
+
+.minute.dark-mode {
+    border-top-color: #fff;
+}
+
+
+/* digital-clock */
+
+.digital-clock {
+    font-size: 5rem;
+}
+
+.date-area {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.day {
+    font-size: 1.3rem;
+    color: #495057;
+}
+
+#date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background-color: #1e212d;
+    color: #fff
+}
+#date.dark-mode {
+    background-color: #fff;
+    color: #1e212d;
+}
+
+
+/* buttons */
+
+#btn {
+    position: relative;
+    width: 100px;
+    height: 30px;
+}
+
+.dark,
+.light {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:0;
+    padding: 10%; 
+}
+
+.dark:focus,
+.light:focus {
+    outline: none;
+}
+
+.dark {
+    background-color: #1e212d;
+    color: #fff
+}
+
+.light {
+    display: none;
+    background-color: #fff;
+}
