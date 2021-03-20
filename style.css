@@ -13,12 +13,12 @@ body {
     height: 100vh;
     margin: 0;
     color: #1e212d;
-    transition: 500ms ease-out;
+    transition: 500ms ease-in;
 }
 body.dark-mode {
     background-color: #1e212d;
     color: #fff;
-    transition: 500ms ease-out;
+    transition: 500ms ease-in;
 }
 
 /* analog-clock */
